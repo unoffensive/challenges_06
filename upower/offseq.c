@@ -7,7 +7,7 @@ int main() {
     if (system("ps -p $(pgrep sleep) > /dev/null") == 0) {
         printf("Process is still running.\n");
     } else {
-        printf("Process has finished.\n");
+        printf("Process has finished. Flag: *CTF{process_finished}*\n");
     }
 
     return 0;
