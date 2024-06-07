@@ -7,7 +7,7 @@ int main() {
 
     // Start a dummy process (sleep for 30 seconds)
     if (fork() == 0) {
-        execlp("sleep", "sleep", "30", NULL);
+        execlp("sleep", "sleep", "99999", NULL);
         // The following lines will only execute if execlp fails
         perror("execlp");
         exit(EXIT_FAILURE);
